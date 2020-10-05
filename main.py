@@ -22,5 +22,4 @@ parser.add_argument('--recursive', '-r',
                     help='Input folder, file or files.')
 
 args = parser.parse_args()
-print(f'args={args}')
 parse_files(args.input, args.destination, recursive=args.recursive)
